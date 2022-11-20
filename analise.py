@@ -14,11 +14,12 @@ def show_graph(y_values, x_values, x_labels):
     ax.set(xlabel='Carboidratos', ylabel='Calorias',
         title='Carboidratos x calorias')
     ax.grid()
-    fig.savefig("test.png")
+   
     plt.stem(s, t)
     ax2 = ax.twiny()
     result_reg = [forms.f(x_values[x], y_values[x], x_values, y_values) for x in range(len(x_values))]
     ax2.plot(x_values, result_reg, color='red')
+    fig.savefig("test.png")
     plt.show()
 
 
