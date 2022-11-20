@@ -22,7 +22,7 @@ def show_graph(y_values, x_values, x_labels):
     plt.show()
 
 
-df = pd.read_csv("Analise de dados/mc_donalds_analysis/menu.csv")
+df = pd.read_csv("menu.csv")
 x_labels = [" "]
 calorias = [i for j,i in enumerate(df["Calories"]) if x_labels[0] in df["Item"][j] ]
 carboidratos = [i for j,i in enumerate(df["Carbohydrates"]) if x_labels[0] in df["Item"][j] ]
